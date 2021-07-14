@@ -1,0 +1,76 @@
+/* Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* =======
+    Reset or utilities
+   =======
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  background-color: #2d25a0;
+  height: 677px;
+  padding: 156px;
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+a {
+  text-decoration: none;
+  background-color: #e02c6d;
+  color: #fff;
+}
+/* top players style */
+
+.banner {
+  display: flex;
+}
+.banner-info {
+  margin-right: 102px;
+}
+.banner-title {
+  color: #fff;
+  font-size: 64px;
+}
+.banner-btn {
+  width: 168px;
+  height: 44px;
+}
+.banner .thumbnail img {
+  width: 556.01px;
+  height: 438px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+}
+.box {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.box .box-banner img {
+  width: 300px;
+  height: 256px;
+}
+.box .box-info {
+  width: 300px;
+  height: 154px;
+}
+.box .box-info h3 {
+  font-size: 28px;
+}
+.box .box-info p {
+  font-size: 16px;
+  color: #6c6c6c;
+}
