@@ -32,6 +32,9 @@ h1 {
   border-radius: 5px;
   color: #fff;
 }
+/* ====================
+      Header section
+   ==================== */
 .container {
   background-color: #2d25a0;
   margin-bottom: 70px;
@@ -56,7 +59,9 @@ h1 {
   transform: scale(1.5);
   transition: transform 2s ease-in-out;
 }
-/* top players style */
+/* ==================
+        Grid Area 
+   ================== */
 
 .boxes {
   display: grid;
@@ -138,6 +143,9 @@ h1 {
   width: 500%;
   animation: slide 10s infinite;
 }
+/* =================
+      Animation
+   ================= */
 @keyframes slide {
   0% {
     left: 0%;
@@ -188,9 +196,9 @@ h1 {
     left: 0%;
   }
 }
-/* =======================
-          Footer 
-   =======================  */
+/* ====================================
+          Footer Social Media icons
+   ====================================  */
 .footer {
   width: 483.87px;
   height: 213px;
@@ -238,8 +246,14 @@ h1 {
   background: #bb0000;
   color: #fff;
 }
-
+/* ====================
+        Media Quary (mobile device)
+   ==================== */
 @media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+    border: 1px solid;
+  }
   .container,
   .boxes,
   .blog {
@@ -247,18 +261,24 @@ h1 {
   }
   .blog,
   .container {
-    display: block;
     flex-direction: column;
   }
 }
+/* ====================================
+        Media Quary (Tablet device)
+   ==================================== */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
   .container {
     width: 100%;
+    border: 1px solid;
   }
   .boxes {
     grid-template-columns: repeat(2, 1fr);
   }
   .blog {
-    width: 100%;
+    flex-direction: column;
+  }
+  .blog {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
